@@ -1,6 +1,4 @@
---Requires:
---cabal install --lib table-layout (required)
-module CombinatoralLogic where
+module Logic() where
 
 import Prelude hiding (and, And)
 import Text.Layout.Table

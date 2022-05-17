@@ -21,12 +21,12 @@ synopsis:           Boolean algebra and combinatoral logic.
 
 -- A longer description of the package.
 -- description:
-	Haskell-gebra is a library for boolean algebra and combinatoral logic
-	modelling. It can:
-	* Create Boolean expressions with unique variables
-	* Evaluate Boolean expressions
-	* Create truth tables for boolean expressions
-	* Simplify Boolean expressions using the Quine-McCluskey algorithm
+    Haskell-gebra is a library for boolean algebra and combinatoral logic
+    modelling. It can:
+      * Create Boolean expressions with unique variables
+      * Evaluate Boolean expressions
+      * Create truth tables for boolean expressions
+      * Simplify Boolean expressions using the Quine-McCluskey algorithm
 
 -- URL for the project homepage or repository.
 homepage:           https://github.com/cjsroda/Haskell-gebra
@@ -52,10 +52,10 @@ extra-source-files: CHANGELOG.md, README.md
 
 library
     -- Modules exported by the library.
-    exposed-modules:  MyLib
+    exposed-modules:  Logic
 
     -- Modules included in this library but not exported.
-    -- other-modules:
+    -- other-modules: Prelude, Data.List, Data.Maybe, Control.Monad
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
