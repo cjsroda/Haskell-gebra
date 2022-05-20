@@ -1,4 +1,4 @@
-module Logic() where
+module Logic where
 
 import Prelude hiding (and, And)
 import Text.Layout.Table
@@ -50,13 +50,13 @@ instance Show BoolExp where
   show (Xnor x) = "~" ++ show (Xor x)
   
 -- Function eval
--- Takes a list of variables and their values and a Boolean expression, then outputs evaluated expression as SBool.
+-- Takes a list of variables and their values and a Boolean expression, then outputs evaluated expression as bool.
 -- List of variables taken as list of tuples (VBool name, Assigned Value)
 eval :: [(String, Bool)] -> BoolExp -> Bool
 eval vars exp = case exp of
   SBool x -> x
   VBool x -> getBoolVal vars x
-    where getBoolVal [] _ = False --NEED TO PUT AN ERROR CASE IN HERE
+    where getBoolVal [] _ = False -- this may need an error message too
           getBoolVal ((varName, boolVal):rest) name = if (name == varName) then boolVal
                                                       else getBoolVal rest name
   Buffer x -> eval vars x
